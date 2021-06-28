@@ -1,13 +1,16 @@
 function spinWords(string){
     //TODO Have fun :)
+    // Создаем массив разделяя строку на слова
     let arr = string.split(' ');
-    // console.log(arr.length);
+    // Итерируемся по элементам массива
     arr.forEach((item, index, arr) => {
+        // Если длина слова 5 или больше букв
         if (item.length >= 5){
+            // разворачиваем слова задом наперед
             arr[index] = item.split('').reverse().join('');
         }
     });  
-
+    // Склеиваем слова из массива пробелами
     return arr.join(' ');
 }
 

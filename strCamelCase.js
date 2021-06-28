@@ -2,14 +2,10 @@ function toCamelCase(str){
     let result = '';
     if (str.search('-') >= 0) {
         result = str.split("-");
-        // console.log(result);
     } else if (str.search('_') >= 0) {
         result = str.split("_");
-        // console.log(result);
     } else {
         result = str.split("");
-        // console.log(result);
-
     }
     
     for (let i = 1; i < result.length; i++) {
